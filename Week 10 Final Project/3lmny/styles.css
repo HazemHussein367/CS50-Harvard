@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  overflow-x: hidden;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.video-bg iframe {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+header {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 2s ease-in-out;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.3em;
+  color: #ddd;
+}
+
+section {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.35);
+  margin: 15px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+h2 {
+  color: #04d5ff;
+}
+ul {
+  text-align: right;
+  display: inline-block;
+  font-size: 1.1em;
+}
+li {
+  margin-bottom: 8px;
+}
+
+.team {
+  border: 2px solid #fff;
+  padding: 25px;
+}
+.team.blue {
+  border-color: #00c3ff;
+}
+.team.red {
+  border-color: #ff003c;
+}
+.center-text {
+  text-align: center;
+}
+
+button.big-btn {
+  padding: 15px 35px;
+  font-size: 1.3em;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px;
+  background: #00c3ff;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button.big-btn:hover {
+  background: #0097cc;
+  transform: scale(1.05);
+}
+button.red-btn {
+  background: #ff003c;
+  color: #fff;
+}
+button.red-btn:hover {
+  background: #cc002f;
+}
+
+.courses {
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.courses.hidden {
+  display: none;
+}
+.course-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 7px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.course-btn:hover {
+  background: #00c3ff;
+  color: #000;
+}
+.course-btn.red:hover {
+  background: #ff003c;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 1em;
+  color: #aaa;
+}
