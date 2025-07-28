@@ -1,0 +1,21 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Fastest speed with small data set, same as sort3 with larger data set
+
+sort2 uses: Merge Sort
+
+How do you know?: It has the lowest sys run time, meaning that it runs the fastest consistently. This observation matches with the efficiency of Merge Sort, which is O(n * log(n))
+
+sort3 uses: selection sort
+
+How do you know?:Fastest for smaller datasets [O(n)]
+
+
+sort1 random10k:.194s
+sort1 sorted10k:.024s
+
+sort2 random10k:.027s
+sort2 sorted10k:.038s
+
+sort3 random10k:.132s
+sort3 sorted10k:.125s
